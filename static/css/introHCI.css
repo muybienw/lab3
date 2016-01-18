@@ -40,3 +40,26 @@ body {
 .project a {
      text-align: center;
 }
+
+.jumbotron p.active {
+     color: #1f6ddd;
+     font-style: oblique;
+}
+
+.invisible {
+     visibility: hidden;
+}
+
+.gray {
+     color : gray;
+     font-style: italic;
+}
+
+.bordered {
+     border: dashed;
+}
+
+.large {
+     height : 125%;
+     width: 125%;
+}
