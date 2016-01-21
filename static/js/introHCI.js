@@ -11,8 +11,10 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
-		$("#testjs").text("Clicked");
 		$(".jumbotron p").toggleClass("active");
+
+		$("#testjs").text("Please wait...");
+
 	});
 
 	$("a.thumbnail").click(projectClick);
@@ -48,9 +50,11 @@ function projectClick(e) {
 	jumbotronHeader.text(projectTitle);
 
 
-	$(this).find("p").toggleClass("gray");
+	$(this).find("p").toggleClass("clicked");
 	$(this).toggleClass("bordered");
-	$(this).find("img").toggleClass("large");
+
+	var image = $(this).find("img");
+	image.fadeToggle();
 
 	//var containingProject = $(this).closest(".project");
 	//containingProject.append("<div class='project-description'><p>Description of the project.</p></div>");
@@ -63,6 +67,6 @@ function projectClick(e) {
 	} else {
 		// description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
 		console.log(description);
-		description.remove();
+		description.fadeToggle();
 	}
 }

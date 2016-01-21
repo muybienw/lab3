@@ -50,9 +50,9 @@ body {
      visibility: hidden;
 }
 
-.gray {
+.clicked {
      color : gray;
-     font-style: italic;
+     font-size: large;
 }
 
 .bordered {
@@ -62,4 +62,12 @@ body {
 .large {
      height : 125%;
      width: 125%;
+}
+
+.project-description{
+     color : white;
+     background-color: #2d6ca2;
+     height: 5em;
+     vertical-align: middle;
+     margin-bottom: 3em;
 }
